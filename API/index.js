@@ -1,6 +1,6 @@
 let mysql = require("./connection.js");
 let express = require("express");
-let bodyParser = require("body-parser");
+let bodyParser = require("body-parser"); //bodyparser is the inbuilt middleware in nodejs
 
 let app = express();
 app.use(bodyParser.json()); // Convert incoming data into json
