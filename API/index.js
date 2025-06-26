@@ -82,6 +82,7 @@ app.post("/api/category", (req, resp) => {
 
 
 
+//--------------------------
 //new api for login & signup
 app.post("/api/login", (req, resp) => {
   let body = req.body;
@@ -122,9 +123,10 @@ app.post("/api/signup", (req, res)=>{
     }); 
     }
 });
-
-
 //end of new api for login and signup
+//-----------------------------------
+
+
 
 
 app.get("/api/category/:id", (req, res) => {
