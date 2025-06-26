@@ -83,14 +83,14 @@ app.post("/api/category", (req, resp) => {
 
 
 //new api for login & signup
-app.post("/api/password", (req, resp) => {
+app.post("/api/login", (req, resp) => {
   let body = req.body;
   if (!body.email || !body.password) {
     return resp.status(404).json({ msg: "Mandatory field is missing" });
   }
   else {
     connection.query(
-      `SELECT email, password FROM login WHERE email = '${body.email}' AND password = '${body.password}'`,
+      `SELECT email, password FROM signup WHERE email = '${body.email}' AND password = '${body.password}'`,
       (error, result) => {
         if (error) {
           return resp.status(400).json({ msg: "Error in SQL!" });
@@ -117,7 +117,7 @@ app.post("/api/signup", (req, res)=>{
         } else if (result.length === 0) {
           return res.status(401).json({ msg: "Invalid credentials" });
         } else {
-          return res.status(200).json({ msg: "Login successful!" });
+          return res.status(200).json({ msg: "SignUp successful!" });
         }
     }); 
     }
