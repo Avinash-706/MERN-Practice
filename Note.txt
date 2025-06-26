@@ -1,1 +1,9 @@
 Blocking Code, Un Blocking Code meaning in nodejs
+if we want to update any record in a api then we will use PUT when we need to update all the details of a single record
+if we want to UPDATE PARTIAL record then we will use patch (Ex. when we will update some coloums of a row)
+
+
+
+WHAT YOU KNOW - PASSWORD
+WHAT YOU HAVE - OTP 
+WHO YOU ARE - EYE SCAN OR FINGER PRINT SCAN
