@@ -3,7 +3,13 @@ if we want to update any record in a api then we will use PUT when we need to up
 if we want to UPDATE PARTIAL record then we will use patch (Ex. when we will update some coloums of a row)
 
 
-
+MULTIFACTOR AUTHENTICATION - 2 or more than 2 AUTHENTICATION technique
 WHAT YOU KNOW - PASSWORD
 WHAT YOU HAVE - OTP 
 WHO YOU ARE - EYE SCAN OR FINGER PRINT SCAN
+
+
+in node.js we are not allowed to passs json without middleware
+
+
+mongodb says a database without collection has a net sense and will not be reflected
